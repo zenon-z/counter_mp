@@ -18,9 +18,6 @@ def create_children(counter):
 
     for p in processes:
         p.start()
-    for p in processes:
-        p.join()
-        p.terminate()
 
 def send_request(counter):
     counter.increment()
